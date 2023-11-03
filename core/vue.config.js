@@ -21,9 +21,7 @@ module.exports = defineConfig({
           // body: "body@http://localhost:8082/remoteEntry.js",
           blogList: "blogList@http://localhost:8080/remoteEntry.js",
         },
-        // exposes: {
-        //   "./store": "./src/store/blogEditor.js",
-        // },
+
         shared: {
           vue: { eager: true, singleton: false },
         },
