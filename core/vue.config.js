@@ -18,8 +18,8 @@ module.exports = defineConfig({
         filename: "remoteEntry.js",
         // library: { type: "var", name: "core" },
         remotes: {
-          // body: "body@http://localhost:8082/remoteEntry.js",
           blogList: "blogList@http://localhost:8080/remoteEntry.js",
+          comment: "comment@http://localhost:8082/remoteEntry.js",
         },
 
         shared: {

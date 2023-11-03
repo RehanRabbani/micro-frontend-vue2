@@ -3,7 +3,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import BlogEditor from "./components/BlogEditor";
 import ListPage from "blogList/ListPage";
-// import RestrauntDetail from "blogList/RestrauntDetail";
+import ResturantRecipes from "comment/ResturantRecipes";
+// import RecepieView from "./components/RecepieView";
 
 Vue.use(VueRouter);
 
@@ -11,7 +12,7 @@ const routes = [
   { path: "/restaurant/:id", component: BlogEditor }, // Define your components
   { path: "/", component: ListPage },
 
-  // { path: "/detail/:id", component: RestrauntDetail },
+  { path: "/recepie/:id", component: ResturantRecipes },
 ];
 
 const router = new VueRouter({

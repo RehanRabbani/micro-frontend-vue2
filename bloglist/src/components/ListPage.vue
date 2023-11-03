@@ -13,6 +13,9 @@
                             :to="{ path: '/restaurant/' + restaurant.id, query: { restaurant: JSON.stringify(restaurant) } }"
                             class="bg-blue-500 text-white py-2 px-4 mt-2 block rounded-full text-center hover:bg-blue-600">
                             reviews</router-link>
+                        <router-link :to="{ path: '/recepie/' + restaurant.id }"
+                            class="bg-blue-500 text-white py-2 px-4 mt-2 block rounded-full text-center hover:bg-blue-600">
+                            see recepies</router-link>
                     </div>
                 </div>
             </div>

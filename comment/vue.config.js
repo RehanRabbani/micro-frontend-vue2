@@ -10,12 +10,12 @@ module.exports = defineConfig({
     },
     plugins: [
       new ModuleFederationPlugin({
-        name: "body",
+        name: "comment",
         filename: "remoteEntry.js",
-        library: { type: "var", name: "body" },
+        library: { type: "var", name: "comment" },
         exposes: {
           "./CommentsSection": "./src/components/CommentsSection.vue",
-          "./storeComment": "./src/store/comments.js",
+          "./ResturantRecipes": "./src/components/ResturantRecipes.vue",
         },
         shared: {
           vue: { eager: true, singleton: false },

@@ -70,7 +70,7 @@ export default {
             if (this.blogContent) {
                 this.$store.dispatch("publishBlogPost", { reviews: this.blogContent, name: this.name });
                 this.blogContent = "";
-                this.name = "";
+                this.blogContent = "";
             }
 
         },

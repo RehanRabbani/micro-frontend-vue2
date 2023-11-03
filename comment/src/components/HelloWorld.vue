@@ -1,5 +1,5 @@
 <template>
-  <p>asbhdashdjhashjkdhjhsaj</p>
+  <p>new message</p>
 </template>
 
 <script>

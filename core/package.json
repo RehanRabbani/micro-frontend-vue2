@@ -37,12 +37,6 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "jest": {
-    "transform": {
-      "^[^.]+.vue$": "vue-jest",
-      "^.+\\.js$": "babel-jest"
-    }
-  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -57,6 +51,15 @@
     },
     "rules": {},
     "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      },
       {
         "files": [
           "**/__tests__/*.{j,t}s?(x)",
